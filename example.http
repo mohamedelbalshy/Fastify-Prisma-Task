@@ -1,0 +1,55 @@
+### Health Check
+
+GET http://localhost:4000/health HTTP/1.1
+
+
+
+### Sign up
+
+POST http://localhost:4000/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mohamed",
+    "email": "mohamedbalshy2014@gmail.com",
+    "password": "123456a"
+}
+
+
+### Login
+
+POST http://localhost:4000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "email": "mohamedbalshy2014@gmail.com",
+    "password": "123456a"
+}
+
+
+### Get Users
+
+GET http://localhost:4000/user HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJtb2hhbWVkYmFsc2h5MjAxNEBnbWFpbC5jb20iLCJhY3RpdmUiOnRydWUsImlhdCI6MTY0NDY2OTQ0MSwiZXhwIjoxNjQ1Mjc0MjQxfQ.M_dH3g28kLzmHD1rifVxcepOJ3Qiyep_OYbrKgJyzyw
+
+
+
+### Get LoggedIn User
+
+GET http://localhost:4000/user/loggedIn HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJtb2hhbWVkYmFsc2h5MjAxNEBnbWFpbC5jb20iLCJhY3RpdmUiOnRydWUsImlhdCI6MTY0NDY2OTQ0MSwiZXhwIjoxNjQ1Mjc0MjQxfQ.M_dH3g28kLzmHD1rifVxcepOJ3Qiyep_OYbrKgJyzyw
+
+
+### Update User Preferences
+
+PUT  http://localhost:4000/user  HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJtb2hhbWVkYmFsc2h5MjAxNEBnbWFpbC5jb20iLCJhY3RpdmUiOnRydWUsImlhdCI6MTY0NDY2OTQ0MSwiZXhwIjoxNjQ1Mjc0MjQxfQ.M_dH3g28kLzmHD1rifVxcepOJ3Qiyep_OYbrKgJyzyw
+Content-Type: application/json
+
+{
+    "preferences": ["it", "Tech"]
+}
+
+
+
